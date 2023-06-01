@@ -1,0 +1,44 @@
+Command: mkdir   sub3
+Command: mkdir   sub4
+Command: tree
+Tree of root:
+.
+├── sub3
+└── sub4
+Command: mv      sub3    sub6
+Command: cd      sub3
+Subdirectory does not exist
+Command: cd      sub6
+Command: mkdir   sub601
+Command: mv      sub601  ..\sub4
+Command: up
+Command: tree
+Tree of root:
+.
+├── sub4
+│   └── sub601
+└── sub6
+Command: cd      sub4
+Command: cd      sub601
+Command: mkdir   sub666
+Command: up
+Command: mv      sub601  sub602
+Command: cd      sub602
+Command: cd      sub666
+Command: tree
+Tree of root\sub4\sub602\sub666:
+.
+Command: up
+Command: up
+Command: mkdir   sub6
+Command: up
+Command: tree
+Tree of root:
+.
+├── sub4
+│   ├── sub6
+│   └── sub602
+│       └── sub666
+└── sub6
+Command: mv      sub6    sub4
+Subdirectory already exists
